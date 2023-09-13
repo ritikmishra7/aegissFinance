@@ -1,0 +1,38 @@
+.socials-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.socials-section svg {
+    color: rgb(3, 228, 240);
+}
+
+.socials-section svg:hover {
+    color: white;
+}
+
+.gitbucket {
+    margin-left: 8px;
+}
+
+
+.gitbook-wrapper {
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.telegram-wrapper {
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    padding: 2px 2px;
+}
+
+.twitter-wrapper {
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    padding: 13px 13px;
+
+}

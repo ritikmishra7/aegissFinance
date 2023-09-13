@@ -1,0 +1,30 @@
+.footer {
+    background-color: #1e1e1e;
+    padding: 40px 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin-top: 80px;
+}
+
+.footer-logo-section {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 40px;
+}
+
+.footer-logo-section img {
+    width: 50px;
+}
+
+.socials-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

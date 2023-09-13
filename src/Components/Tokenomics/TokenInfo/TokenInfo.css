@@ -1,0 +1,23 @@
+.tokenomics-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1180px;
+}
+
+.tokenomics-left {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.tokenomics-right {
+    width: 48%;
+}
+
+.tokenomics-right img {
+    margin: auto;
+    width: 77%;
+}

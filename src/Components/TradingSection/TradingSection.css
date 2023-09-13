@@ -1,0 +1,63 @@
+.trading-section {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 30px;
+    margin-inline: auto;
+    margin-bottom: 100px;
+}
+
+.trading-section h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgb(248, 248, 248);
+    margin-bottom: 24px;
+}
+
+.price-part {
+    align-items: center;
+    background: #2d2d2d;
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr 3fr 2fr;
+    margin-bottom: 16px;
+    padding: 16px 24px;
+    width: 100%;
+}
+
+.btc-price {
+    align-items: center;
+    display: flex;
+}
+
+.btc-price p {
+    color: #f8f8f8;
+    margin-left: 12px;
+    font: 16px;
+}
+
+.pinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pinfo p {
+    color: #B5B5B5;
+    font-size: 14px;
+}
+
+.pinfo span {
+    font-size: 16px;
+    color: #F8F8F8;
+}
+
+.h24-change span {
+    color: rgb(99, 255, 60);
+}

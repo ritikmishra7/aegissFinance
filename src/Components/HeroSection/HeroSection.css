@@ -1,0 +1,39 @@
+.hero-section {
+    display: flex;
+    color: white;
+    width: 100%;
+    max-width: 1180px;
+    justify-content: center;
+    margin: 40px 0px 60px;
+}
+
+.hero-left {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-left img {
+    width: 85%;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+}
+
+.hero-right h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.hero-right p {
+    font-size: 16px;
+    line-height: 25px;
+}

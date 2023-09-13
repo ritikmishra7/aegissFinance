@@ -1,0 +1,19 @@
+.dashboard {
+    width: 100%;
+}
+
+.dashboard-content {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 40px;
+}
+
+.tokenomics-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,10 @@
+.Navbar {
+    width: 100%;
+    max-width: 1180px;
+    height: 100px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
