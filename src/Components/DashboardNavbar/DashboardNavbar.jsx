@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../Logo/Logo'
 import logo from '../../Assets/images/logo.png'
 import ethlogo from '../../Assets/images/eth.png'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import './DashboardNavbar.css'
 import Modal from '../Modal/Modal'
 
 function DashboardNavbar() {
+    const navigate = useNavigate()
     const location = useLocation();
     const [showModal, setShowModal] = useState(false)
 
@@ -27,11 +28,11 @@ function DashboardNavbar() {
                 <Logo />
                 <div className="navbar-options">
                     <ul>
-                        <li className={pathname === 'dashboard' ? 'selected' : ''}>Dashboard</li>
+                        <li className={pathname === 'dashboard' ? 'selected' : ''} onClick={() => navigate('/dashboard')}>Dashboard</li>
                         <li>Perp</li>
                         <li>Convert</li>
                         <li>Swap</li>
-                        <li className={pathname === 'launchpad' ? 'selected' : ''}>Launchpad</li>
+                        <li className={pathname === 'launchpad' ? 'selected' : ''} onClick={() => navigate('/launchpad')}>Launchpad</li>
                         <li>DAO</li>
                         <li>Liquidity</li>
                         <li>More</li>

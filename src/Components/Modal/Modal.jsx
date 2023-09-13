@@ -21,6 +21,7 @@ function Modal({ setShowModal, showModal }) {
         return () => {
             document.removeEventListener('mousedown', handleClickAway);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [showModal]);
 
     const modalRef = useRef(null);
