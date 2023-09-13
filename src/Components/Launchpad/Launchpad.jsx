@@ -5,24 +5,47 @@ import Button from '../Button/Button'
 import LauchpadList from './LauchpadList'
 
 function Launchpad() {
+
+    const data = [
+        {
+            name: 'AGS (Round For Community)',
+            raiseSize: '1,375,000 AGS',
+            status: 'Ended',
+            rounds: '1'
+
+        },
+        {
+            name: 'AGS (Public Sale)',
+            raiseSize: '2,812,500 AGS',
+            status: 'Ended',
+            rounds: '1'
+        },
+    ]
+
     return (
         <div className='launchpad'>
             <DashboardNavbar />
             <div className="lauchpad-content">
                 <div className="lauchpad-upper">
                     <div className="launchpad-header-action">
-                        <div className="launchpad-title">Launchpad</div>
+                        <p className="launchpad-title">Launchpad</p>
                         <Button tittle={'Register Now'} />
                     </div>
-                    <span>Our Launchpad is at the forefront of driving growth in the Arbitrum Ecosystem. By providing a decentralized and interoperable platform, it offers the latest projects the opportunity to raise capital and generate initial liquidity. The Launchpad also enables both the project and UrDEX communities to participate in carefully curated and vetted token offerings. In addition, it provides users with the ability to leverage the UrDEX's infrastructure for sustainable and adaptable liquidity. Whether you are a project looking to launch or a user seeking to participate, the Launchpad is the ideal platform for those seeking to enter the world of decentralized finance.</span>
+                    <span>Our Launchpad is shaping the trajectory of the Ethereum Ecosystem's evolution. As a decentralized and interoperable hub, it extends a golden ticket to nascent projects for capital influx and initial liquidity inception. Beyond fundraising, it curates token offerings, providing a bridge for both the projects and the Aegiss communities to converge. Users also benefit from tapping into Aegiss's robust infrastructure for agile and enduring liquidity solutions. Catering to both emergent projects and users, the Launchpad stands as a beacon for those navigating the decentralized finance sphere.</span>
                 </div>
                 <div className="lauchpad-lower">
-                    <p>Lauchpad List</p>
-                    <LauchpadList />
-                    <LauchpadList />
+                    <p className='lpad-list-title'>Lauchpad List</p>
+                    {
+                        data.map((item, index) => {
+                            return (
+                                <LauchpadList key={`${item.name}+${index}`} name={item.name} raiseSize={item.raiseSize} status={item.status} rounds={item.rounds} />
+                            )
+                        }
+                        )
+                    }
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

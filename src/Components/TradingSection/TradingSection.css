@@ -61,3 +61,17 @@
 .h24-change span {
     color: rgb(99, 255, 60);
 }
+
+@media screen and (max-width: 999px) {
+
+    .price-part {
+        width: 100%;
+        grid-template-columns: auto auto auto;
+    }
+
+    .h24-high,
+    .h24-low {
+        display: none;
+    }
+
+}

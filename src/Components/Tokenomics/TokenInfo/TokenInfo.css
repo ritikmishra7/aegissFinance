@@ -21,3 +21,13 @@
     margin: auto;
     width: 77%;
 }
+
+@media screen and (max-width: 999px) {
+    .tokenomics-container {
+        flex-direction: column-reverse;
+    }
+
+    .tokenomics-left {
+        width: 90%;
+    }
+}

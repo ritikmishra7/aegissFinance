@@ -46,7 +46,7 @@ function Modal({ setShowModal, showModal }) {
                 <p className='select-network'>Select Network</p>
                 <div className='network-name btn-hover'>
                     <img src={EtheriumLogo} alt="eth" width={45} height={45} />
-                    <p>Etherium</p>
+                    <p>Ethereum</p>
                 </div>
             </div>
         </div>

@@ -18,9 +18,6 @@ function DashboardNavbar() {
         setPathname(location.pathname.split('/')[1])
     }, [location])
 
-    useEffect(() => {
-        console.log('clicked')
-    }, [])
 
     return (
         <div className='dashboard-navbar'>
@@ -48,7 +45,7 @@ function DashboardNavbar() {
                     <button className='eth-btn' onClick={() => setShowModal(true)}>
                         <div className="eth-logo" >
                             <img src={ethlogo} alt="eth-logo" width={24} height={24} />
-                            <p>Etherium</p>
+                            <p>Ethereum</p>
                         </div>
                     </button>
                 </div>

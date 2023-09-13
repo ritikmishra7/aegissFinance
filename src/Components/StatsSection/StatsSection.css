@@ -46,3 +46,18 @@
     font-size: 20px;
     color: #F8F8F8;
 }
+
+@media screen and (max-width: 999px) {
+    .stats-section {
+        flex-direction: column;
+        width: 90%;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .value,
+    .volume,
+    .fees {
+        width: 95%;
+    }
+}

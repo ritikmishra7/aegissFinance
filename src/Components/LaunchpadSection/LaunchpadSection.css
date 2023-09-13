@@ -36,3 +36,18 @@
     color: rgb(160, 165, 181);
     line-height: 30px;
 }
+
+@media screen and (max-width: 999px) {
+    .launchpad-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .launchpad-left-part {
+        width: 90%;
+    }
+
+    .launchpad-right-part {
+        align-self: center;
+    }
+}

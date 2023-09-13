@@ -1,3 +1,137 @@
 .launchpad {
     width: 100%;
 }
+
+.lauchpad-content {
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1280px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.lauchpad-upper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.launchpad-header-action {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.launchpad-title {
+    color: #F8F8F8;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.lauchpad-upper span {
+    color: #B5B5B5;
+    margin-top: 12px;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.lauchpad-lower {
+    border: 1px solid #2f2f36;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    padding: 24px 24px 12px;
+    width: 100%;
+}
+
+.lpad-list-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: #f8f8f8;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.lauchpad-list {
+    align-items: center;
+    background: #2d2d2d;
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 6fr 4fr 3fr 3fr 1fr;
+    margin-bottom: 16px;
+    padding: 20px 32px;
+    transition: all .3s;
+    color: #9f9f9f;
+}
+
+.lauchpad-list:hover {
+    color: #B5B5B5;
+    background: #282828
+}
+
+.list-item-1 {
+    display: flex;
+    gap: 10px;
+}
+
+.list-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-details p {
+    color: #f8f8f8;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.list-details span {
+    color: #b5b5b5;
+}
+
+.list-item-2,
+.list-item-3,
+.list-item-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+.list-item-2 p,
+.list-item-3 p,
+.list-item-4 p {
+    color: #b5b5b5;
+    margin-bottom: 6px;
+}
+
+.list-item-2 span,
+.list-item-4 span {
+    color: #f8f8f8;
+}
+
+.list-item-3 span {
+    color: rgb(255, 31, 0);
+}
+
+.arrow {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: inherit;
+}

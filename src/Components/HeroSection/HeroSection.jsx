@@ -12,7 +12,7 @@ function HeroSection({ path }) {
                 <img src={Animation} alt="banner" />
             </div>
             <div className="hero-right">
-                <h3>Risk Mastery Meets Liquid Agility.</h3>
+                <h3>Blending Risk Control & Liquid Readiness.</h3>
                 <p>Introducing a decentralized perpetual exchange combined with cutting-edge risk management solutions.</p>
                 <div onClick={() => navigate('/dashboard')}>
                     {path === 'dashboard' ? '' : <Button tittle={'Use App'} />}
