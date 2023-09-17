@@ -6,14 +6,14 @@ function AdvantageCard({ align, title, description }) {
         alignItems: 'flex-start',
         borderLeft: '1px solid rgb(0,255,240)',
         textAlign: 'left',
-        background: 'linearGradient(-90deg, rgb(34, 34, 34) 0%, rgba(40, 38, 38, 0) 100%)',
+        background: 'linear-gradient(to right, rgb(33, 33, 33), transparent)'
     }
 
     const rightStyledCard = {
         alignItems: 'flex-end',
         borderRight: '1px solid rgb(0,255,240)',
         textAlign: 'right',
-        background: 'linearGradient(0deg, rgb(34, 34, 34) 0%, rgba(40, 38, 38, 0) 100%)'
+        background: 'linear-gradient(to right, transparent, rgb(33, 33, 33))'
     }
 
     return (
