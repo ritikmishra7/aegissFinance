@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Modal2.css'
-function Modal2({ setShowModal2, showModal2, rotationAngle, setRotationAngle }) {
+function Modal2({ setShowModal2, showModal2, setRotationAngle }) {
     const modal2Ref = useRef(null);
 
     useEffect(() => {
