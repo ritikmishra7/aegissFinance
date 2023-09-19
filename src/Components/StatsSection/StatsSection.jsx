@@ -1,5 +1,5 @@
 import React from 'react'
-import ValueLogo from '../../Assets/images/value.svg'
+import dollar from '../../Assets/images/dollar.svg'
 import VolumeLogo from '../../Assets/images/volume.svg'
 import FeesLogo from '../../Assets/images/fees.svg'
 
@@ -9,7 +9,7 @@ function StatsSection() {
     return (
         <div className='stats-section'>
             <div className="value stat-box">
-                <img src={ValueLogo} alt="value" width={58} height={58} />
+                <img src={dollar} alt="value" width={58} height={58} />
                 <div className="stats-content">
                     <p className='grey-content'>Total Value Locked</p>
                     <p className='stats-rate value-rate'>$98,573</p>

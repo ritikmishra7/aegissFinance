@@ -11,6 +11,16 @@
     position: relative;
 }
 
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal2Wrapper {
+    position: relative;
+}
+
 .dashboard-navbar-left-side {
     display: flex;
     align-items: center;

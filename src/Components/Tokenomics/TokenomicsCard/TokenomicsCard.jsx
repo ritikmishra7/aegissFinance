@@ -15,7 +15,7 @@ function TokenomicsCard({ title, subtitle, desc, path, index }) {
                         <p>{subtitle}</p>
                     </div>
                 </div>
-                {path === 'dashboard' && index === 0 ? <Button tittle='Earn URD' /> : null}
+                {path === 'dashboard' && index === 0 ? <Button tittle='Earn AGS' /> : null}
             </div>
             <div className="tokenomics-desc">
                 <p>

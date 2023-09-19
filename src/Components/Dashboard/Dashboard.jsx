@@ -7,9 +7,6 @@ import TradingSection from '../TradingSection/TradingSection'
 import './Dashboard.css'
 
 function Dashboard() {
-
-
-
     return (
         <div className='dashboard'>
             <DashboardNavbar />

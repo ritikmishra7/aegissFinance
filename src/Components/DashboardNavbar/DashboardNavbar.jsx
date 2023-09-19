@@ -5,11 +5,22 @@ import ethlogo from '../../Assets/images/eth.png'
 import { useLocation, useNavigate } from 'react-router-dom'
 import './DashboardNavbar.css'
 import Modal from '../Modal/Modal'
+import Modal2 from './Modal2'
 
 function DashboardNavbar() {
     const navigate = useNavigate()
     const location = useLocation();
     const [showModal, setShowModal] = useState(false)
+    const [showModal2, setShowModal2] = useState(false)
+    const [rotationAngle, setRotationAngle] = useState(0);
+
+    const handleSVGClick = () => {
+        setShowModal2(!showModal2);
+        if (rotationAngle === 0)
+            setRotationAngle(180);
+        else
+            setRotationAngle(0);
+    };
 
     const [pathname, setPathname] = useState('')
 
@@ -30,9 +41,15 @@ function DashboardNavbar() {
                         <li>Convert</li>
                         <li>Swap</li>
                         <li className={pathname === 'launchpad' ? 'selected' : ''} onClick={() => navigate('/launchpad')}>Launchpad</li>
-                        <li>DAO</li>
-                        <li>Liquidity</li>
-                        <li>More</li>
+                        <li className={pathname === 'dao' ? 'selected' : ''} onClick={() => navigate('/dao')}>DAO</li>
+                        <li className={pathname === 'liquidity' ? 'selected' : ''} onClick={() => navigate('/liquidity')}>Liquidity</li>
+                        <div className='modal2Wrapper'>
+                            <li onClick={handleSVGClick} className='more'
+                            >More
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style={{ marginLeft: '10px', transform: `rotate(${rotationAngle}deg)` }}><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M7 10l5 5 5-5H7z"></path></svg>
+                            </li>
+                            <Modal2 setShowModal2={setShowModal2} showModal2={showModal2} setRotationAngle={setRotationAngle} />
+                        </div>
                     </ul>
                 </div>
             </div>

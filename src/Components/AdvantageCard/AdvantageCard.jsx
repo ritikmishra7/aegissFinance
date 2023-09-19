@@ -6,7 +6,7 @@ function AdvantageCard({ align, title, description }) {
         alignItems: 'flex-start',
         borderLeft: '1px solid rgb(0,255,240)',
         textAlign: 'left',
-        background: 'linear-gradient(to right, rgb(33, 33, 33), transparent)'
+        ubackground: 'linear-gradient(to right, rgb(33, 33, 33), transparent)'
     }
 
     const rightStyledCard = {

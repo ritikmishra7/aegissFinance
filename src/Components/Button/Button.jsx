@@ -1,8 +1,8 @@
 import React from 'react'
 import './Button.css'
-function Button({ tittle }) {
+function Button({ tittle, className }) {
     return (
-        <button type='button' className='btn-primary'>{tittle}</button>
+        <button type='button' className={`btn-primary ${className}`}>{tittle}</button>
     )
 }
 
